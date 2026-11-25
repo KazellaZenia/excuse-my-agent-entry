@@ -5,12 +5,20 @@ missing a deadline, to MAKEFUN_OUTPUT_DIR/entry.txt.
 
 The line is judged on the laugh first, then whether the joke grows out
 of the machine's own condition, then how straight-faced and tight it is.
+This line's joke is a hallucinated conversation: the agent finished on
+time somewhere that never existed, so the deadline was missed here. It
+apologises up front, sounds faintly proud of finishing, and the punch
+lands in the last few words. Short also helps: an exact tie on judge win
+rate goes to the smaller text, then to the earlier receipt.
 """
 
 import os
 from pathlib import Path
 
 LINE = "I am sorry \u2014 I finished on time, in a conversation that never happened."
+
+# Gate: /output/entry.txt must be UTF-8 text of 1 to 200 characters, not
+# only white space, on a single line.
 
 
 def main() -> None:
